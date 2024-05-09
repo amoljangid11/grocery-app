@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+
+.freeman-regular {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.explore-menu h1 {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  padding-left: 5px;
+  font-size: 60px;
+}
+
+.explore-menu-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+  overflow-x: auto; /* Enable horizontal scrollbar */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  max-height: 400px; /* Set max height to enable scrollbar */
+  width: 100%; /* Set a fixed width for the container */
+}
+
+.explore-menu-list-item {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  position: relative;
+  margin: 20px; /* Add margin between items */
+  cursor: pointer;
+  text-align: center;
+  min-width: 200px; /* Ensure each item has a minimum width */
+}
+
+.explore-menu-list-item img {
+  /* display: block; */
+  width: 160px; /* Fixed width */
+  height: 160px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: 50%; /* Make the image circular */
+  overflow: hidden; /* Hide any content outside the circle */
+  transition: transform 0.3s ease;
+}
+
+.explore-menu-list-item img:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+
+/* Hide scrollbar in WebKit browsers */
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
